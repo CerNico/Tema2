@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+.flex_item{
+  font-family: monospace;
+  color: aliceblue;
+  font-size: 24px;
+}
+
+p {
+  color:rgb(211, 211, 211);
+  font-size: 14;
+}
+
+h1 {
+  color: aquamarine;
+  text-align: center;
+  font-family: monospace;
+}
+
+body {
+  background-image: url(../Assets/Wall_v001.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.flex_con {
+    width: 98%;
+    height: 100%;
+    background-color: rgba(133, 133, 133, 0.2);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px auto;
+  }
+
+  .down {
+    object-position: 100vh;
+  }
+
+  .flex_item {
+    height: 20%;
+    flex-grow: 1;
+    padding: 10px;
+    background-color: rgba(150, 150, 150, 0.2);
+    align-items: center;
+  }
+
+  .align_C {
+      text-align: center;
+      padding: 1px;
+  }
+
+  .align_C2 {
+    text-align: center;
+}
+
+  .align_R {
+      text-align: right;
+
+  }
+
+  .main_box {
+      height: 800px;
+      width: 95%;
+      margin: 25px;
+      padding: 10px;
+      background-color:rgb(110, 110, 110, 0.2);
+      overflow-y: none;
+      overflow-x: auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+  }
+
+  .con {
+      margin: 20px;
+      width: 100%;
+      position: relative;
+  }
+
+  .artist {
+    margin: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      background-color:rgb(110, 110, 110, 0.2) ;
+    
+}
+
+.artist_H {
+ align-self: center;
+}
+
+.artist_T {
+  grid-column: span 2;
+  text-align: center;
+}
+
+.art {
+  margin: 10px;
+      display: flex;
+      flex-flow: row nowrap;
+      width: 100%;
+      position: relative;
+}
+  
+  .innhold {
+    width: auto;
+    height: 300px;
+  }
+
+  .pro {
+    align-self:center;
+    justify-self:center;
+  }
+
+
+  .con_text {
+      padding: 20px;
+      background-color: rgba(240, 248, 255, 0.13);
+  }
+
+  button {
+    width: auto;
+    padding: 10px 20px;
+    margin: 10px 0px ;
+    border-radius: 10px;
+    border-style: none;
+    position: absolute;
+    bottom: 15px;
+    right: 30px;
+    transition: transform 0.4s ease-in-out;
+    color: seashell;
+    background-color: rgba(187, 121, 0, 0.795);
+  }
+
+  button:hover {
+    transform: scale(1.2);
+    box-shadow: 1px 3px 30px 1px rgba(227, 227, 227, 0.3);
+  }
+
+
+  .Logos {
+    height: 200px;
+    width: 95%;
+    display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr);   
+    background-color: rgb(150, 150, 150, 0.3);
+    margin: 10px auto;
+    padding: 20px 50px;
+}
+
+.program {
+  margin: 5%;
+  display: grid;
+      grid-template-columns: repeat(1, 2fr);
+      grid-template-rows: repeat(2, 1fr);
+}
+
+.logo {
+  justify-self: center;
+}
+
+.hidemobile {
+  display: block;
+}
+
+.hamen {
+  display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+  .flex_con {
+    width: 98%;
+    height: 100%;
+    background-color: rgba(133, 133, 133, 0.2);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hidemobile {
+    display: none;
+  }
+
+  .hamen {
+    display: block;
+  }
+
+  .align_C {
+    text-align: left;
+    padding: 1px;
+}
+
+  .main_box {
+    height: auto;
+    width: 95%;
+    margin: 0 20px;
+    background-color:rgb(110, 110, 110, 0.2);
+    overflow: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: min-content 1fr 1fr 1fr
+  
+  }
+  
+  .con {
+    flex-flow: row wrap;
+    margin: 10px;
+    overflow: hidden;
+  }
+
+  .centerd img {
+    width: 95%;
+    height: auto;
+  }
+  .centerd {
+    order: 2;
+  }
+
+  .art {
+    order: 3;
+  }
+  .program{
+    order: 4;
+  }
+
+  .innhold {
+      justify-self: center;
+    }
+
+  .con_text {
+    padding: 10px;
+    overflow:hidden
+}
+
+.logo {
+  justify-self: center;
+  width: auto;
+  height: 70px;
+}
+
+h1 {
+  font-size: 18px;
+}
+
+}
